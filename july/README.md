@@ -15,23 +15,52 @@ This will be a live workshop, where participants will get exposure to the Django
 - [ ] Form Handling
 - [ ] Basic charting
 
-<br/>
-SYSTEM SETUP
-
->Have the following set up in an environment on your laptop:
-```python
-Python >=3.6
-Django >=3.2.x
-pandas = 1.1.5
-plotly = 4.5.0
-Bootstrap > 4.x
-```
-<br/>
-LEVEL
-
+LEVEL<br/>
 Intermediate.<br/>
 Python experience will be useful. No Django experience required.
-<br/><br/>
+
+
+## SYSTEM SETUP
+
+### 1. Git and GitHub account
+
+   If you want to use the sample repository, you will need a GitHub account, and SSH key.
+
+   See: [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### 2. Python >= 3.6
+
+   Please have Python >= 3.6 installed if you haven't done already.
+
+   See: [Python Downloads page](https://www.python.org/downloads/)
+
+
+### 3. Clone the repositoty
+You can clone the sample repository.  And then install necessary packages.
+```
+git clone https://github.com/sanrioyt/stock_market_django.git
+```
+It will create a new folder named `stock_market_django` with all the content
+you will need.  Go into the folder.
+```
+cd stock_market_django
+```
+
+### 4a) Create a virtual environment
+
+```
+python -m venv django-demo
+source django-demo/bin/activate
+```
+
+### 4b) Install the dependencies into the virtual environment.
+
+   In source code: [requirements.txt](https://github.com/sanrioyt/stock_market_django/blob/master/requirements.txt)
+
+```
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
 ## RESOURCES
 
 [Houston PyLadies July 2021 meetup](https://www.meetup.com/Houston_PyLadies/events/gsrjxrycckbrb/)
